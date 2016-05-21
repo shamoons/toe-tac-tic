@@ -10,4 +10,8 @@ angular.module('toeTactic').controller('HomeCtrl', function($scope, $firebaseObj
     obj.$save();
     // $scope.data = 'allowance';
   }
+
+  $scope.createGame = function() {
+    alert("creating game");
+  }
 });
