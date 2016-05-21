@@ -1,1 +1,1 @@
-angular.module('toeTactic', ['firebase']);
+angular.module('toeTactic', ['firebase', 'ui.router']);
