@@ -1,15 +1,17 @@
-angular.module('toeTactic').controller('HomeCtrl', function($scope, $firebaseObject) {
-  var ref = new Firebase('https://toe-tactic.firebaseio.com/shamoon');
-  var obj = $firebaseObject(ref);
+angular.module('toeTactic').controller('HomeCtrl', function($scope, $firebaseObject, $firebaseArray) {
 
-  $scope.shamoon = obj;
+  var gamesRef = new Firebase('https://toe-tactic.firebaseio.com/games');
 
-  $scope.doInfo = function() {
-    obj.foo = 'bar';
-    // shamoon = 'fdsafs';
-    obj.$save();
-    // $scope.data = 'allowance';
+
+  $scope.createNewGame = function() {
+    $scope.games.$add({
+      players: [],
+      status: "playing",
+      board: [],
+      turns: []
+    })
   }
 
-  $scope.doInfo();
+  $scope.games = $firebaseArray(gamesRef);
+
 });

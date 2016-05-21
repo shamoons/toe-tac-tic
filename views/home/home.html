@@ -1,8 +1,8 @@
-<div class="container">
+<div ng-controller="HomeCtrl" class="container">
   <div class="jumbotron text-center">
     <h1>Welcome to Toe Tac Tic!</h1>
     <h2>This is the welcome page</h2>
-    <button class="btn btn-primary">Create Game</button>
+    <a ng-click="createNewGame()" class="btn btn-primary">Create Game</a>
     <button class="btn btn-success">Join Game</button>
     <a ui-sref="turns" class="btn btn-success">Tmp Turns</a>
   </div>
