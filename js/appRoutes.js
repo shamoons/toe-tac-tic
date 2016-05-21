@@ -18,7 +18,11 @@ angular.module("toeTactic").config(function($stateProvider, $urlRouterProvider, 
       url: '/:gameId?currentPlayer',
       templateUrl: '/views/game/game.html'
     })
-
+    .state('localGame', {
+      url: '/localgame',
+      templateUrl: '/views/game/localGame.html',
+      controller: 'LocalGameCtrl'
+    })
     .state('turns', {
       url: '/turns',
       templateUrl: '/views/tmp/turn.html'

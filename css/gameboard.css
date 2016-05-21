@@ -11,6 +11,7 @@
   text-align: center;
 }
 
+
 .game .square:hover {
   background-color: #388E3C;
   cursor: pointer;
@@ -18,4 +19,18 @@
 
 .game .game-option {
   font-size: 140px;
+}
+
+@media (max-width: 500px) {
+  .game .square {
+    background-color: #4CAF50;
+    height: 120px;
+    width: 120px;
+    margin: 8px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .game .game-option {
+    font-size: 120px;
+  }
 }
