@@ -1,5 +1,5 @@
 angular.module('toeTactic').controller('LocalGameCtrl', function($scope) {
-  $scope.gridOptions = [{
+  $scope.gameMap = [{
     owner: null
   }, {
     owner: null
@@ -21,12 +21,14 @@ angular.module('toeTactic').controller('LocalGameCtrl', function($scope) {
   $scope.turn = "X";
   $scope.chooseSpace = function(index) {
     console.log(index)
-    if (!$scope.gridOptions[index].owner && $scope.turn === "X") {
-      $scope.gridOptions[index].owner = "X";
+    if (!$scope.gameMap[index].owner && $scope.turn === "X") {
+      $scope.gameMap[index].owner = "X";
       $scope.turn = "O"
-    } else if (!$scope.gridOptions[index].owner && $scope.turn === "O") {
-      $scope.gridOptions[index].owner = "O";
+      $scope.checkWin();
+    } else if (!$scope.gameMap[index].owner && $scope.turn === "O") {
+      $scope.gameMap[index].owner = "O";
       $scope.turn = "X"
+      $scope.checkWin();
     }
   }
   $scope.checkWin = function() {
@@ -43,8 +45,8 @@ angular.module('toeTactic').controller('LocalGameCtrl', function($scope) {
     var currentWinner = null;
     _.each(winMatrix, function(winPath) {
       if(currentWinner === null) {
-        if($scope.gameMap[winPath[0]].value === $scope.gameMap[winPath[1]].value && $scope.gameMap[winPath[1]].value === $scope.gameMap[winPath[2]].value) {
-          currentWinner = $scope.gameMap[winPath[0]].value;
+        if($scope.gameMap[winPath[0]].owner !== null && $scope.gameMap[winPath[0]].owner === $scope.gameMap[winPath[1]].owner && $scope.gameMap[winPath[1]].owner === $scope.gameMap[winPath[2]].owner) {
+          currentWinner = $scope.gameMap[winPath[0]].owner;
           alert('winner is ' + currentWinner);
         }
       }

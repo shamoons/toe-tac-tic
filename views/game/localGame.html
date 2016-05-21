@@ -4,7 +4,7 @@
       <div class="col-md-6 col-md-offset-4">
     <div class="game">
       <div class="row">
-        <div ng-repeat="option in gridOptions |limitTo:3:0" >
+        <div ng-repeat="option in gameMap |limitTo:3:0" >
         <div  ng-click="chooseSpace($index)" class="col-md-4 col-sm-4 col-xs-4 col-xs-4 square">
           <span>
             <i ng-if="option.owner === 'X' " class="material-icons game-option">clear</i>
@@ -14,7 +14,7 @@
       </div>
     </div>
       <div class="row">
-        <div ng-repeat="option in gridOptions |limitTo:3: 3" >
+        <div ng-repeat="option in gameMap |limitTo:3: 3" >
         <div  ng-click="chooseSpace($index + 3)" class="col-md-4 col-sm-4 col-xs-4 col-xs-4 square">
           <span>
             <i ng-if="option.owner === 'X' " class="material-icons game-option">clear</i>
@@ -24,7 +24,7 @@
       </div>
       </div>
       <div class="row">
-        <div ng-repeat="option in gridOptions |limitTo:3: 6" >
+        <div ng-repeat="option in gameMap |limitTo:3: 6" >
         <div  ng-click="chooseSpace($index + 6)" class="col-md-4 col-sm-4 col-xs-4 col-xs-4 square">
           <span>
             <i ng-if="option.owner === 'X'" class="material-icons game-option">clear</i>
