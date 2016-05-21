@@ -13,7 +13,15 @@
     <div ng-controller="HomeCtrl">
       <button ng-click="doInfo()"></button>
       HERE: {{ shamoon }}
+
+<form ng-submit="addMessage()">
+      <input ng-model="newMessageText" />
+      <button type="submit">Add Message</button>
+</form>
+      
     </div>
+
+
 
     <div ui-view></div>
 
