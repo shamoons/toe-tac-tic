@@ -7,7 +7,11 @@ angular.module("toeTactic").config(function($stateProvider, $urlRouterProvider, 
     .state('home', {
       url: '/',
       templateUrl: '/views/home/home.html'
+    })
+    .state('turns', {
+      url: '/turns',
+      templateUrl: '/views/tmp/turn.html'
     });
 
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true);
 });
