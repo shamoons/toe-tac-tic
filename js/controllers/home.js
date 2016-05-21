@@ -1,11 +1,13 @@
 angular.module('toeTactic').controller('HomeCtrl', function($scope, $firebaseObject) {
-  var ref = new Firebase('https://toe-tactic.firebaseio.com/');
+  var ref = new Firebase('https://toe-tactic.firebaseio.com/shamoon');
+  var obj = $firebaseObject(ref);
 
-  $scope.stuff = $firebaseObject(ref);
-  // var syncObject = $firebaseObject(ref);
+  $scope.shamoon = obj;
 
   $scope.doInfo = function() {
-    $scope.stuff.$save('fds');
+    obj.foo = 'bar';
+    // shamoon = 'fdsafs';
+    obj.$save();
     // $scope.data = 'allowance';
   }
 
