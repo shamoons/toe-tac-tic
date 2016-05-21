@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="toeTactic">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <title>Toe Tac Tic</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <base href="/"></base>
   </head>
   <body>
 
@@ -10,10 +14,14 @@
       <button ng-click="doInfo()"></button>
     </div>
 
+    <div ui-view></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/appRoutes.js"></script>
+    <script src="js/controllers/home.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers/home.js"></script>
   </body>
 </html>
