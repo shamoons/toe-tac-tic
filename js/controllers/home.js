@@ -15,22 +15,12 @@ angular.module('toeTactic').controller('HomeCtrl', function($scope, $firebaseObj
   $scope.messages = $firebaseArray(ref);
 
   $scope.addMessage = function() {
-    
+
 
 
     $scope.messages.$add({
       text: $scope.newMessageText
-
-    }).then({ permaText: $scope.newMessageText.$save()
-
-
-
-
-
-    });
-
-
-      
+    })
   };
 
 
