@@ -10,9 +10,15 @@ angular.module("toeTactic").config(function($stateProvider, $urlRouterProvider, 
     })
 
     .state('game', {
+      abstract: true,
       url: '/game',
+      template: '<div ui-view></div>'
+    })
+    .state('game.detail', {
+      url: '/:gameId?currentPlayer',
       templateUrl: '/views/game/game.html'
     })
+
     .state('turns', {
       url: '/turns',
       templateUrl: '/views/tmp/turn.html'
