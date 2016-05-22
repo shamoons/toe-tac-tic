@@ -19,193 +19,193 @@ angular.module('toeTactic').controller('HomeCtrl', function($scope, $state, $fir
       ],
       status: "playing",
       gameMap: [{
-          owner: null,//first
+          owner: "empty",//first
           littleGame: [{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }, {
-          owner: null,//second
+          owner: "empty",//second
           littleGame:[{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }, {
-          owner: null,//third
+          owner: "empty",//third
           littleGame: [{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }, {
-          owner: null,//fourth
+          owner: "empty",//fourth
           littleGame: [{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }, {
-          owner: null,//fifth
+          owner: "empty",//fifth
           littleGame: [{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }, {
-          owner: null,//sixth
+          owner: "empty",//sixth
           littleGame: [{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }, {
-          owner: null, //seventh
+          owner: "empty", //seventh
           littleGame: [{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }, {
-          owner: null, //eigth
+          owner: "empty", //eigth
           littleGame: [{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }, {
-          owner: null,//ninth
+          owner: "empty",//ninth
           littleGame: [{
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }, {
-            owner: null
+            owner: "empty"
           }]
         }],
       turns: []
@@ -220,5 +220,5 @@ angular.module('toeTactic').controller('HomeCtrl', function($scope, $state, $fir
   }
 
   $scope.games = $firebaseArray(gamesRef);
-
+  console.log($scope.games);
 });

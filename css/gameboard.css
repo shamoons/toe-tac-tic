@@ -1,6 +1,8 @@
 .game {
   border: red 2px;
   width: 500px;
+  position: relative;
+  top: 8vh;
 }
 .game .square {
   background-color: #4CAF50;

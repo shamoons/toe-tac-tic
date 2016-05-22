@@ -11,7 +11,8 @@ angular.module("toeTactic").config(function($stateProvider, $urlRouterProvider, 
     $stateProvider
       .state('game1', {
         url: '/game1',
-        templateUrl: '/views/game/game1.html'
+        templateUrl: '/views/game/game1.html',
+        controller: 'HomeCtrl'
       })
 
     .state('game', {
