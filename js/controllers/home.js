@@ -18,7 +18,196 @@ angular.module('toeTactic').controller('HomeCtrl', function($scope, $state, $fir
         }
       ],
       status: "playing",
-      board: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      gameMap: [{
+          owner: null,//first
+          littleGame: [{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }, {
+          owner: null,//second
+          littleGame:[{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }, {
+          owner: null,//third
+          littleGame: [{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }, {
+          owner: null,//fourth
+          littleGame: [{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }, {
+          owner: null,//fifth
+          littleGame: [{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }, {
+          owner: null,//sixth
+          littleGame: [{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }, {
+          owner: null, //seventh
+          littleGame: [{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }, {
+          owner: null, //eigth
+          littleGame: [{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }, {
+          owner: null,//ninth
+          littleGame: [{
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }, {
+            owner: null
+          }]
+        }],
       turns: []
     })
     .then(function(data) {
