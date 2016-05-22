@@ -34,3 +34,63 @@
     font-size: 120px;
   }
 }
+
+.little-square {
+  border: solid 2px white;
+  padding: 5px;
+  position: relative;
+  top:18%;
+}
+.squareA {
+  border-left: none;
+  border-top: none;
+  border-right: 2px solid white;
+  border-bottom: 4px solid white;
+}
+.squareB {
+  border-left: 2px solid white;
+  border-top: none;
+  border-bottom: 4px solid white;
+}
+.squareC {
+  border-left: 2px solid white;
+  border-top: none;
+  border-right: none;
+  border-bottom: 4px solid white;
+}
+.squareD {
+  border-left: none;
+  border-top: none;
+  border-right: 2px solid white;
+  border-bottom: 4px solid white;
+}
+.squareE {
+  border-left: 2px solid white;
+  border-top: none;
+  border-right: 2px solid white;
+  border-bottom: 4px solid white;
+}
+.squareF {
+  border-left: 2px solid white;
+  border-top: none;
+  border-right: none;
+  border-bottom: 4px solid white;
+}
+.squareG {
+  border-left: none;
+  border-top: none;
+  border-right: 2px solid white;
+  border-bottom: none;
+}
+.squareH {
+  border-left: 2px solid white;
+  border-top: none;
+  border-right: 2px solid white;
+  border-bottom: none;
+}
+.squareI {
+  border-left: 2px solid white;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
